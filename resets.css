@@ -1,0 +1,12 @@
+a, body, button, caption, dd, div, dl, dt, em, figure, form, h1, h2, h3, h4, h5, h6, html, i, img, input, label, li, ol, p, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul {
+    margin: 0;
+    padding: 0;
+}
+body{font-size:12px;font-family:"Helvetica"; font-weight:normal;}	
+ul,li{list-style:none;}
+html,body,img{border:0;}
+em{font-style:normal;}			
+h1,h2,h3,strong,em,i{ font-style:normal; font-weight:normal;}
+a,a:hover{text-decoration:none;}
+input{outline: none}
+.clearfix:after{clear:both; content:""; font-size:0; display:block; visibility:hidden; height:0}

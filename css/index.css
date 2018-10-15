@@ -5,6 +5,9 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 body{
     font-size: 12px;
     font-family: "宋体";
@@ -199,4 +202,90 @@ div{
 .HotSearch a{
     color:#727171;
     margin:0 5px 0 0;
+}
+.logoList{
+    width:1000px;
+    height:22px;
+    margin:30px auto;
+    padding-left:200px;
+    position: relative;
+}
+.logoList li{
+    float:left;
+    width:99px;
+    line-height: 22px;
+    padding:0 0 10px;
+    text-align:center;
+    font-size:16px;
+    position: relative;
+    font-family: "Microsoft YaHei"
+}
+.logoList ul li a{
+    color:#727171;
+}
+.logoList ul li a:hover{
+    color:#a10000;
+}
+.logoList ul li:nth-child(3) em{
+    display:block;
+    width:25px;
+    height:13px;
+    background:url(../images/icon_hot.png) no-repeat scroll;
+    position: absolute;
+    left:67px;
+    top:-5px;
+}
+.logoList .nav-one{
+    position: absolute;
+    left:0;
+    bottom:0;
+    padding:0;
+    background:none;
+    width:100%;
+}
+.logoList .nav-one a{
+    display: block;
+    width:185px;
+    height:46px;
+    background:url(../images/logo18546.png) no-repeat scroll;
+
+}
+.logoList li .navLine{
+    display:block;
+    height:16px;
+    width:1px;
+    border-right:1px solid #888;
+    position: absolute;
+    right:1px;
+    top:5px;
+    overflow:hidden;
+}
+.subNav{
+    width:99px;
+    background:#fff;
+    position: absolute;
+    left:-2px;
+    top:30px;
+    display:none;
+}
+.subNav span{
+    display: block;
+    width:100%;
+    height:5px;
+    border-top:5px solid #b81c22;
+}
+.subNav ul{
+    border:1px solid #efefef;
+    border-top:0;
+    padding:10px 0;
+}
+.subNav ul li{
+    text-align: center;
+    line-height:35px;
+    background:none;
+    padding:0;
+    float:none;
+    font-size:16px;
+    width:99px;
+
 }
