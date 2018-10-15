@@ -289,3 +289,102 @@ div{
     width:99px;
 
 }
+#foot{
+    overflow: hidden;
+    width:1118px;
+    height:282px;
+    margin:0 auto;
+    padding:0 40px 0;
+    border:1px solid #e0e0e1;
+    font-family:"Microsoft YaHei";
+    margin-bottom:25px;
+}
+.Customer{
+    margin:33px 0 23px;
+    overflow: hidden;
+}
+.Customer ul li{
+    width:370px;
+    height:138px;
+    border-right:1px solid #e0e0e1;
+    margin-right:0;
+    float:left;
+}
+.Customer ul li p{
+    text-align: center;
+    font-size:14px;
+    color:#727171;
+    line-height:26px;
+}
+.Customer ul li .onlineCustomer{
+    margin:15px auto 30px;
+}
+.Customer ul li .onlineCustomer img{
+    display:block;
+    margin:0 auto;
+}
+.Customer ul li .onlinetime{
+    margin:0 auto;
+    width:156px;
+    height:32px;
+    text-align:center;
+    line-height:32px;
+    font-size:14px;
+    background:#b81c22;
+    color:#fff;
+}
+.Customer ul li .seven{
+    margin:20px 0;
+}
+.Customer ul .Scan{
+    border-right:none;
+}
+.Customer ul .Scan p img{
+    width:104px;
+    height:104px;
+    
+}
+.Customer ul .Scan p em{
+    color:#a10000;
+    font-style:normal;
+    font-weight: normal;
+}
+.other{
+    height:26px;
+    padding:17px 0 14px;
+    background:#f8f8f8;
+    width:100%;
+    margin:0;
+}
+.other ul li{
+    padding:0 65px;
+    line-height:26px;
+    border-right:1px solid #dadadb;
+    width:auto;
+    text-align:center;
+    margin-right:0;
+    float:left;
+}
+.other ul li a{
+    color:#323232;
+}
+.other ul .none{
+    border-right:none;
+}
+#vanclfoot .footcopyright{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    border-top:1px solid #3e3a39;
+}
+.bottomtop{
+    width:1200px;
+    height:auto;
+    margin:10px auto;
+}
+.bottomtop p{
+    text-align: center;
+    line-height:25px;
+    color:#3e3a39;
+    font-family: "微软雅黑";
+}
