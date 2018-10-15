@@ -44,3 +44,159 @@ div{
     float: left;
     display: inline;
 }
+#active img{
+    padding-right:4px;
+}
+#active a{
+    line-height:18px;
+    display:block;
+    float: right;
+
+}
+#Wechat{
+    width:50px;
+    height:30px;
+    float: right;
+}
+#Wechat a:nth-child(1){
+    float:left;
+    position: relative;
+}
+#Wechat a:nth-child(1) span{
+    background:url("../images/w1.jpg") no-repeat left 3px;
+    display: inline;
+    float: left;
+    width:20px;
+    height:21px;
+    position: absolute ; 
+    margin-left:10px;
+    margin-top:4px;
+}
+#Wechat a:nth-child(1) b{
+    position: absolute;
+    width:148px;
+    height:169px;
+    right:-20px;
+    top:30px;
+    border:1px solid #e5e5e5;
+    background:url(../images/weixin.png) no-repeat;
+    overflow:hidden;
+    cursor:pointer;
+    background-size:148px 169px;
+    display:none;
+}
+#Wechat a:nth-child(2){
+    background:url("../images/w2.jpg") no-repeat left 3px;
+    display: inline;
+    float: left;
+    width:20px;
+    height:25px;
+    line-height: 32px;
+    position: absolute ;
+    margin-left:30px; 
+    margin-top:4px;
+}
+.headerTopLeft{
+    float: right;
+}
+#welcome{
+    float:left;
+}
+#welcome a{
+    color:#808080;
+}
+.order{
+    float:left;
+    margin:0 0 0 13px;
+}
+.order a{
+    padding-right:14px;
+    color:#808080;
+}
+#logoTop{
+    width:1200px;
+    height:62px;
+    margin:20px auto 25px;
+}
+.vanclSearch{
+    width:438px;
+    padding-top:8px;
+    float:right;
+
+}
+.Search{
+    height:29px;
+}
+.SearchBox{
+    float: left;
+}
+.searchText{
+    width:249px;
+    height:27px;
+    padding:0px 5px;
+    line-height: 27px;
+    border:1px solid #c9caca;
+    float:left;
+    font-family: "宋体";
+    font-size:12px;
+
+}
+.searchbtn{
+    width:49px;
+    height:29px;
+    border:none;
+    background:url(../images/vanclsprite.png) no-repeat scroll -100px 0px;
+}
+.Shopping{
+    width:105px;
+    height:27px;
+    border:1px solid #c1383e;
+    background:url(../images/vanclsprite.png) no-repeat scroll -154px 0px;
+    position: relative;
+    float:right;
+}
+.Shopping p a{
+    display:block;
+    padding-left:29px;
+    padding-top:6px;
+    font-size:12px;
+    color:#fff;
+}
+#shopList{
+    width:315px;
+    height:auto;
+    padding:5px;
+    border:1px solid #b81c22;
+    position: absolute;
+    right:-1px;
+    top:27px;
+    background:#fff;
+    display: none;
+}
+.hover{
+    border:1px solid #c1383e;
+    border-bottom:1px solid #fff;
+    background:url(../images/vanclsprite.png) no-repeat scroll -153px -29px;
+    width:105px;
+    height:27px;
+    position: relative;
+    float:right;
+}
+.hover p a{
+    display:block;
+    padding-left:29px;
+    padding-top:6px;
+    font-size:12px;
+    color:#b81c22;
+}
+.HotSearch{
+    width:440px;
+    padding-top:5px;
+    line-height:18px;
+    color:#727171;
+    padding-left:15px;
+}
+.HotSearch a{
+    color:#727171;
+    margin:0 5px 0 0;
+}
