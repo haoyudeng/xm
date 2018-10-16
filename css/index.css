@@ -475,3 +475,57 @@ div{
     height:55px;
     background:url(../images/baywindow.png) no-repeat -1px -149px;
 }
+#content{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+    overflow: hidden;
+}
+#banner{
+    width:1200px;
+    height:535px;
+    overflow:hidden;
+    position:relative;
+}
+#banner ul li{
+    display:list-item;
+    position: absolute;
+}
+#banner ol{
+    height:12px;
+    position: absolute;
+    right:46%;
+    top:500px;
+    overflow: hidden;
+}
+#banner ol li{
+    width:12px;
+    height:12px;
+    float:left;
+    display: inline;
+    margin-right:8px;
+    background: #ddd;
+    border-radius: 12px;
+}
+#banner ol .current{
+    background:#a10000;
+}
+#banner p{
+    height:60px;
+    width:28px;
+    z-index:10;
+    display: inline-block;
+    text-indent: -9999px;
+}
+#banner .Leftarr{
+    background:url(../images/focus_lr0918.png) no-repeat scroll 0 0;
+    position: absolute;
+    top:230px;
+    left:10px;
+}
+#banner .Rightarr{
+    background: url(../images/focus_lr0918.png) no-repeat scroll -52px 0;
+    position: absolute;
+    right:10px;
+    top:230px
+}
