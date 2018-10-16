@@ -4,8 +4,7 @@
     var oList = $("#olist").children();
     var Left = $(".Leftarr");
     var Right = $(".Rightarr");
-    var banner = $("#banner");
-    timer = setInterval( autoPlay , 1500 );
+    timer = setInterval( autoPlay , 2000 );
     var index = 0;
 	function autoPlay(){
         index++;
@@ -29,7 +28,7 @@
 			autoPlay();
 		}
 		oList[i].onmouseout = function(){
-			timer = setInterval( autoPlay , 1500 );
+			timer = setInterval( autoPlay , 2000 );
         }
     }
     Left[0].onmouseover = function(){
@@ -37,7 +36,7 @@
         Left[0].style.backgroundPositionY = "-61px";
         Left[0].onmouseout = function(){
             Left[0].style.backgroundPositionY = "0"
-            timer = setInterval( autoPlay , 1500 );
+            timer = setInterval( autoPlay , 2000 );
         }
 
     }
@@ -47,7 +46,7 @@
         Right[0].style.backgroundPositionY = "-61px";
         Right[0].onmouseout = function(){
             Right[0].style.backgroundPositionY = "0"
-            timer = setInterval( autoPlay , 1500 );
+            timer = setInterval( autoPlay , 2000 );
         }
 
     }

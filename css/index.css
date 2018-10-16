@@ -529,3 +529,132 @@ div{
     right:10px;
     top:230px
 }
+#money{
+    margin:20px 0;
+}
+.rec ul{
+    padding-left:22px
+}
+.rec ul li{
+    float: left;
+    margin:20px 10px;
+}
+#piclist h2{
+    text-align:center;
+    line-height:50px;
+    margin:30px 0;
+    font-family: "微软雅黑";
+    color:#9a9a9a;
+    font-size:18px;
+    font-weight:normal;
+    float: clean;
+}
+#piclist ul li{
+    float:left;
+    margin-right:17px;
+    display: inline;
+}
+#piclist ul li h3{
+    height:28px;
+    padding:20px 12px;
+    line-height:28px;
+    border:1px solid #e8e7ec;
+    border-top:0;
+    font-family: "微软雅黑";
+    font-size:14px;
+    font-weight:normal;
+    color:#333;
+}
+#piclist ul li h3 span{
+    float:right;
+    color:#a10000;
+    font-family: Arial;
+    line-height:24px;
+    font-size:14px;
+}
+#piclist ul li h3 span em{
+    font-size:16px;
+    padding-left:10px;
+}
+#piclist ul .pic-one{
+    width:590px;
+}
+#piclist ul .pic-two{
+    width:290px;
+}
+#piclist ul li div{
+    margin-bottom:16px;
+}
+#piclist ul .pic-three{
+    margin-right:0;
+    width:286px;
+}
+#piccloak{
+    overflow: hidden;
+    width:1200px;   
+}
+#piccloak h2{
+    text-align:center;
+    line-height:50px;
+    margin:30px 0;
+    font-family: "微软雅黑";
+    color:#9a9a9a;
+    font-size:18px;
+    font-weight:normal;
+    float: clean;
+}
+#piccloak ul li{
+    width:285px;
+    height:508px;
+    float:left;
+    display: inline;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+#piccloak ul li:nth-child(4){
+    margin-right:0;
+}
+#piccloak ul li h3{
+    height:28px;
+    padding: 20px 12px;
+    line-height:28px;
+    border:1px solid #e8e7ec;
+    border-top:0;
+    font-family: "微软雅黑";
+    font-size:14px;
+}
+#otherlist{
+    overflow: hidden;
+    width:1200px;
+}
+#otherlist h2{
+    text-align:center;
+    line-height:50px;
+    margin:30px 0;
+    font-family: "微软雅黑";
+    color:#9a9a9a;
+    font-size:18px;
+    font-weight:normal;
+    float: clean;
+}
+#otherlist ul li{
+    float: left;
+    width:385px;
+    height:275px;
+    display: inline;
+    margin:0 22px 28px 0;
+}
+#otherlist ul li:nth-child(3){
+    margin-right:0;
+}
+#piccloak ul li h3 span{
+    float:right;
+    color:#a10000;
+    font-family: Arial;
+    line-height:24px;
+    font-size:14px;
+}
+#piccloak ul li h3 span em{
+    font-size:16px;
+    padding-left:10px;
+}
