@@ -490,6 +490,7 @@ div{
 #banner ul li{
     display:list-item;
     position: absolute;
+    display:none;
 }
 #banner ol{
     height:12px;
