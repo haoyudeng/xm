@@ -1,210 +1,82 @@
-#body{
-    font:100 12px "SimSun";
+#body {
+    font: 100 12px " SimSun";
 }
-body{
-    font-family: "微软雅黑"!important;
-    color:#000;
-    font-size:12px;
-    width:1200px;
-    height:100%;
-    margin:0 auto;
+.wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
 }
-
-h1,h2,h3,h4,h5,h6{
-    font-size:100%;
-    font-weight: normal;
-    color:#333;
-}
-#top{
-    margin:10px 0 0 0;
-    padding:0 0 10px 0;
-    border-bottom:1px solid #919191;
-}
-.regis{
-    width:100%;
-    margin:30px 0 0 0;
-}
-.regis h1{
-    height:35px;
-    width:415px;
-    float:right;
-    line-height:35px;
-    margin:0 100px 0 0;
-    border-bottom:2px solid #b81e20;
-    font-size:20px;
-    color:#a2a2a2;
-    font-weight: bolder;
-}
-.regis h1 span{
-    font-size:14px;
-    float:right;
-}
-.regis h1 span a{
-    color:#b52024;
-    margin:0 0 0 3px;
-}
-#right{
-    width:415px;
-    float:right;
-    margin:10px 95px 0 0;
-}
-.infor{
-    overflow: inherit;
-    width:415px;
-    zoom: 1;
-    display: inline-block;
-}
-.email{
-    width:415px;
-}
-.email ul #yzmcode{
-    zoom:1;
-    display:block;
+.box3, .box7, .box10, .box15, .box20, .box30, .box40, .box50, .box80 {
+    height: 7px;
+    line-height: 0;
+    font-size: 0;
     clear: both;
-    margin-top:15px;
-    border:1px solid #fff;
-}
-#yzmcode div{
-    border:0 none;
-    width:415px;
-    overflow:inherit;
-    zoom:1;
-    height:45px;
-    position: relative;
-}
-#yzmcode div label{
-    width:260px;
-    height:43px;
-    line-height:43px;
-    border:1px solid rgb(203, 203,203);
-    z-index:10;
-    color:#acacac;
-    position: absolute;
-    left:0;top:0;
     display: block;
-    text-align: left;
-    font-size:14px;
-    text-indent:10px;
-    background:#fff;
 }
-#yzmcode div input{
-    width:260px;
-    border:1px solid #cbcbcb;
-    height:43px;
-    line-height:43px;
-    opacity: 0.5;
-    background:#fff;
+.box15 {
+    height: 15px;
 }
-#yzmcode div .tips1{
-    color:#a10000;
-    border:1px solid #ffd5d5;
-    padding:3px 5px;
-    position: absolute;
-    left:0;top:46px;
-    z-index:20;
-    background: #f9f9f9;
-    display: inline-block;
-    display: none;
+.regist {
+    width: 100%;
+    margin: 30px 0 0 0;
 }
-.blank{
-    width:100%;
-    height:10px;
-    overflow: hidden;
-    clear:both;
-}
-#liphone{
-    display:list-item;
-    margin-top:15px;
-    clear:both;
-    border:1px solid #fff;
-}
-.phonebox{
-    position: relative;
-    width:415px;
-    height:auto;
-}
-.iphone{
-    height:45px;
-    border:1px solid #cbcbcb;
-    position: relative;
-    overflow: hidden;
-    width:260px;
-    float:left;
-}
-.iphone label{
-    height:45px;
-    line-height: 45px;
-    color:#acacac;
-    position: absolute;
-    left:0;top:0;
-    width:100%;
-    display:block;
-    text-align: left;
-    font-size: 14px;
-    text-indent: 10px;
-    background: #fff;
-    z-index:10;
-}
-.iphone input{
-    opacity:0.5;
-    background:#fff;
-    height:45px;
-    line-height:45px;
-    color:#656565;
-    position: absolute;
-    left:0;top:0;
-    width:100%;
-    display: block;
-    text-align: left;
-    text-indent: 10px;
-    z-index:9;
-    border:0 none;
-    font-size:14px;
-}
-.sprite_a{
-    height:45px;
-    width:140px;
-    text-align: center;
-    line-height:45px;
-    background:#f5f5f5;
-    color:#b52024 !important;
-    border:1px solid #cbcbcb;
-    display:block;
-    float:left;
-    margin:0 0 0 10px;
+.regist h1 {
+    height: 35px;
+    width: 415px;
+    float: right;
+    line-height: 35px;
+    margin: 0 100px 0 0;
+    border-bottom: 2px solid #b81e20;
+    /* padding-left: 10px; */
+    font-size: 20px;
+    color: #a2a2a2;
     font-weight: bolder;
 }
-.tips2{
-    display:block;
-    line-height:16px;
-    color:#999;
-    height:16px;
-    position: absolute;
-    left:0;top:47px;
-    z-index:20;
+.regist h1 span {
+    font-size: 14px;
+    float: right;
 }
-#phonecode{
-    display:list-item;
-    clear:both;
-    margin-top:15px;
+.regist h1 span a {
+    color: #b52024;
+    margin: 0 0 0 3px;
 }
-.v2regListInfo_rtCont{
-    position: relative;
-    width:415px;
-    height:auto;
+.content_left {
+    width: 415px;
+    float: right;
+    margin: 10px 95px 0 0;
 }
-#_mcode{
-    width:410px;
+.infor {
+    width: 415px;
+    zoom: 1;
 }
-.newtext{
-    height:45px;
-    width:360px;
-    border:1px solid #cbcbcb;
+.email {
+    width: 415px;
+}
+#v2regListInfo_bar li {
+    clear: both;
+    /* padding: 5px 0; */
+    margin-top: 15px;
+}
+
+.v2reg_bg1 {
+    border: 1px solid #fff;
+}
+.newtxt {
+    height: 45px;
+    width: 360px;
+    border: solid 1px #cbcbcb;
     position: relative;
     overflow: hidden;
 }
+.email label {
+    width: 100px;
+    text-align: right;
+}
 
-.newtext label{
+.email label, .email input {
+    float: left;
+}
+.newtxt label {
     height: 45px;
     line-height: 45px;
     color: #acacac;
@@ -219,7 +91,7 @@ h1,h2,h3,h4,h5,h6{
     text-indent: 10px;
     background: #fff;
 }
-.newtext input{
+.newtxt input {
     height: 45px;
     line-height: 45px;
     color: #656565;
@@ -233,54 +105,138 @@ h1,h2,h3,h4,h5,h6{
     z-index: 9;
     border: 0 none;
     font-size: 14px;
-    float:left;
 }
-.newtext .hoverinput{
-    opacity: 0.5;
-    background:#fff;
+.v2reg_tips02 {
+    display: none;
+    color: #a10000;
+    border: 1px #ffd5d5 solid;
+    padding: 3px 5px;
+    position: absolute;
+    left: 0px;
+    z-index: 20;
+    background: #f9f9f9;
+    top: 46px;
+    display: inline-block;
 }
-.reg-bg1{
-    clear:both;
-    margin-top:15px;
+.v2regListInfo_rtCont {
+    width: 415px;
+    height: auto;
 }
-.regListInfo_rtCont{
-    position: relative;
-    width:415px;
-    height:auto;
+.asPhoneregBtn {
+    width: 97px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    /* background-position: 0 -354px; */
+    background: #f5f5f5;
+    color: #b52024!important;
+    border: solid 1px #cbcbcb;
+    display: block;
+    float: left;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
+    /* margin-top: -3px; */
 }
-#_mpassword{
-    width:410px;
+.v2regList_Btnimg {
+    float: left;
+    background: url(https://ssl.vanclimg.com/login/sprite_a.png) no-repeat 0 -354px;
+    width: 97px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    /* background-position: 0 -354px; */
+    background: #f5f5f5;
+    color: #b52024!important;
+    border: solid 1px #cbcbcb;
+    display: block;
+    float: left;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
 }
-#_mpassword2{
-    width:410px;
+.v2regList_Btnimg img {
+    margin-right: 3px;
 }
-.reg_bt{
-    margin:10px 0 0 0;
+.iFloatingwindow {
+    z-index: 99;
+    display: none;
+    position: absolute;
+    background: #fff7f7;
+    border: 1px #ffb8b8 solid;
+    padding: 7px;
+    left: 220px;
+    top: 35px;
 }
-.reg_bt span{
-    color:#9d9d9d;
+.box3 {
+    height: 0px;
+    overflow: hidden;
+}
+.box5 {
+    height: 0px;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+}
+.v2reg_tips01 {
+    line-height: 16px;
+    color: #999;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    top: 47px;
+    z-index: 20;
+}
+.Rclear {
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+    display: block;
+}
+.v2reg_Safetyinfo {
+    float: left;
+    line-height: 22px;
+    color: #666;
+}
+.v2regfl, .v2regimg_01 {
+    float: left;
+}
+.v2regimg_01 {
+    width: 140px;
+    float: left;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/sprite_a.png) no-repeat 0 -1097px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.v2reg_Class {
+    float: left;
+}
+.v2reg_bt {
+    /* margin-left: 100px; */
+    margin: 10px 0 0 0;
+}
+.v2reg_bt span {
+    color: #9d9d9d;
     font-size: 14px;
     font-weight: bolder;
     line-height: 12px;
-    margin:0 0 10px 0;
+    margin: 0 0 10px 0;
 }
-.reg_bt span label{
-    width:100%;
-    float: none;
-    text-align: right;
-}
-.reg_bt span a{
-    color:#b52024;
+.v2reg_bt span a {
+    font-size: 14px;
+    color: #b52024!important;
     font-weight: bolder;
-    font-size:12px;
 }
-.box10{
-    height:10px;
+.reda10_ft12:link, .reda10_ft12:visited {
+    color: #a10000;
+    font-size: 12px;
 }
-.reg_bt a{
-    color:#333;
+.box10 {
+    height: 10px;
 }
-.submitStyle{
+.submitStyle {
+    /* padding: 1px; */
     clear: both;
     width: 100%;
     height: 45px;
@@ -293,74 +249,55 @@ h1,h2,h3,h4,h5,h6{
     clear: both;
     font-size: 16px;
     font-weight: bolder;
-
 }
-#submitRegister_false{
-    background: #9a9a9a;
-    color:#fff;
+#livalidatecode{
+    display:none;
 }
-#submitRegister{
-    display: none;
-}
-#left{
-    width: 465px;
-    height: 500px;
-    float: left;
-    margin: 0 0 0 130px;
-}
-#left img{
-    width:465px;
-}
-#bottom{
+#bottom {
     width: 980px;
     display: inline-table;
     font: 100 12px "宋体";
     color: #999999;
-    position: relative;
-    margin:0 auto;
-    padding-top:15px;
-
 }
-#bottoms p{
-    margin:0 0 20px 0;
-    padding:0;
-    width:980px;
+#bottoms .bZp3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    _margin: 0 0 17px 0;
+    width: 980px;
 }
-#footerArea{
-    width:980px;
-    margin:0 auto;
+#footerArea {
+    width: 980px;
+    margin: 0 auto;
 }
-#footerArea .subFooter{
-    margin-bottom:25px;
-    text-align:center;
+#footerArea .subFooter {
+    margin-bottom: 25px;
+    text-align: center;
 }
-#footerArea .subFooter .redLogo{
-    width:113px;
-    height:42px;
-    display:inline-block;
-    background:url(../images/spritesbg.png) no-repeat 0 -400px;
-    margin:0 10px;
-
-}
-#footerArea .subFooter .costumeOrg{
-    width:156px;
-    height:45px;
+#footerArea .redLogo:link, #footerArea .redLogo:visited, #footerArea .redLogo:hover {
+    width: 113px;
+    height: 42px;
     display: inline-block;
-    background: url(../images/spritesbg.png) no-repeat 0 -448px;
-    margin:0 10px;
+    background: url(../images/spritesbg.png) no-repeat 0px -400px;
 }
-#footerArea .subFooter .wsjyBzzx{
-    width:96px;
-    height:42px;
-    display:inline-block;
-    background:url(../images/spritesbg.png) no-repeat 0 -494px;
-    margin:0 10px;
+#footerArea .subFooter a, #footerArea .subFooter span {
+    margin: 0 10px;
+}
 
+#footerArea .costumeOrg {
+    width: 156px;
+    height: 45px;
+    display: inline-block;
+    background: url(../images/spritesbg.png) no-repeat 0px -448px;
 }
-#footerArea .subFooter .vanclMsg{
-    width:101px;
-    height:42px;
+#footerArea .wsjyBzzx:link, #footerArea .wsjyBzzx:visited, #footerArea .wsjyBzzx:hover {
+    width: 96px;
+    height: 42px;
+    display: inline-block;
+    background: url(../images/spritesbg.png) no-repeat 0px -494px;
+}
+#footerArea .vanclMsg:link, #footerArea .vanclMsg:visited, #footerArea .vanclMsg:hover {
+    width: 101px;
+    height: 42px;
     display: inline-block;
     background: url(../images/spritesbg.png) no-repeat -97px -494px;
-    margin:0 10px;
 }

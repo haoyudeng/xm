@@ -2,7 +2,7 @@ a, body, button, caption, dd, div, dl, dt, em, figure, form, h1, h2, h3, h4, h5,
     margin: 0;
     padding: 0;
 }
-body{font-size:12px;font-family:"Helvetica"; font-weight:normal;}	
+body,input{font-size:12px;font-family:"微软雅黑" !important; color:#000;}	
 ul,li{list-style:none;}
 html,body,img{border:0;}
 em{font-style:normal;}			
