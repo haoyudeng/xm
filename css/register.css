@@ -253,6 +253,14 @@
 #livalidatecode{
     display:none;
 }
+.content_right {
+    width: 465px;
+    height: 500px;
+    /* border-left: 1px solid #C3C3C3; */
+    float: left;
+    /* background-color: #F9F9F9; */
+    margin: 0 0 0 130px;
+}
 #bottom {
     width: 980px;
     display: inline-table;

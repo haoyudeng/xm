@@ -75,7 +75,8 @@ div{
     margin-left:10px;
     margin-top:4px;
 }
-#Wechat a:nth-child(1) b{
+#Wechat a:nth-child(1) .ewm{
+    z-index:20;
     position: absolute;
     width:148px;
     height:169px;

@@ -22,3 +22,14 @@ oA.click = function(e){
         scroll = 0;
     }
 }
+
+//微信二维码
+var wechat = $("#Wechat").children("a").children("span");
+var oB = document.querySelector(".ewm")
+console.log(oB)
+wechat[0].onmouseover = function(){
+    oB.style.display = "block";
+    wechat[0].onmouseleave = function(){
+        oB.style.display = "none"
+    }
+}
