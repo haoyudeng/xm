@@ -174,3 +174,193 @@ h1,h2,h3,h4,h5,h6{
     margin:0 0 0 10px;
     font-weight: bolder;
 }
+.tips2{
+    display:block;
+    line-height:16px;
+    color:#999;
+    height:16px;
+    position: absolute;
+    left:0;top:47px;
+    z-index:20;
+}
+#phonecode{
+    display:list-item;
+    clear:both;
+    margin-top:15px;
+}
+.v2regListInfo_rtCont{
+    position: relative;
+    width:415px;
+    height:auto;
+}
+#_mcode{
+    width:410px;
+}
+.newtext{
+    height:45px;
+    width:360px;
+    border:1px solid #cbcbcb;
+    position: relative;
+    overflow: hidden;
+}
+
+.newtext label{
+    height: 45px;
+    line-height: 45px;
+    color: #acacac;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    z-index: 10;
+    font-size: 14px;
+    text-indent: 10px;
+    background: #fff;
+}
+.newtext input{
+    height: 45px;
+    line-height: 45px;
+    color: #656565;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    text-indent: 10px;
+    z-index: 9;
+    border: 0 none;
+    font-size: 14px;
+    float:left;
+}
+.newtext .hoverinput{
+    opacity: 0.5;
+    background:#fff;
+}
+.reg-bg1{
+    clear:both;
+    margin-top:15px;
+}
+.regListInfo_rtCont{
+    position: relative;
+    width:415px;
+    height:auto;
+}
+#_mpassword{
+    width:410px;
+}
+#_mpassword2{
+    width:410px;
+}
+.reg_bt{
+    margin:10px 0 0 0;
+}
+.reg_bt span{
+    color:#9d9d9d;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 12px;
+    margin:0 0 10px 0;
+}
+.reg_bt span label{
+    width:100%;
+    float: none;
+    text-align: right;
+}
+.reg_bt span a{
+    color:#b52024;
+    font-weight: bolder;
+    font-size:12px;
+}
+.box10{
+    height:10px;
+}
+.reg_bt a{
+    color:#333;
+}
+.submitStyle{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #b52024;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    clear: both;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+#submitRegister_false{
+    background: #9a9a9a;
+    color:#fff;
+}
+#submitRegister{
+    display: none;
+}
+#left{
+    width: 465px;
+    height: 500px;
+    float: left;
+    margin: 0 0 0 130px;
+}
+#left img{
+    width:465px;
+}
+#bottom{
+    width: 980px;
+    display: inline-table;
+    font: 100 12px "宋体";
+    color: #999999;
+    position: relative;
+    margin:0 auto;
+    padding-top:15px;
+
+}
+#bottoms p{
+    margin:0 0 20px 0;
+    padding:0;
+    width:980px;
+}
+#footerArea{
+    width:980px;
+    margin:0 auto;
+}
+#footerArea .subFooter{
+    margin-bottom:25px;
+    text-align:center;
+}
+#footerArea .subFooter .redLogo{
+    width:113px;
+    height:42px;
+    display:inline-block;
+    background:url(../images/spritesbg.png) no-repeat 0 -400px;
+    margin:0 10px;
+
+}
+#footerArea .subFooter .costumeOrg{
+    width:156px;
+    height:45px;
+    display: inline-block;
+    background: url(../images/spritesbg.png) no-repeat 0 -448px;
+    margin:0 10px;
+}
+#footerArea .subFooter .wsjyBzzx{
+    width:96px;
+    height:42px;
+    display:inline-block;
+    background:url(../images/spritesbg.png) no-repeat 0 -494px;
+    margin:0 10px;
+
+}
+#footerArea .subFooter .vanclMsg{
+    width:101px;
+    height:42px;
+    display: inline-block;
+    background: url(../images/spritesbg.png) no-repeat -97px -494px;
+    margin:0 10px;
+}

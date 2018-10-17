@@ -12,7 +12,7 @@
     <div id="top">
         <img src="../images/logo_new.jpg" alt="">
     </div>
-    <form id="myform">
+    <form id="myform" class="clearfix">
         <div class="regis">
             <h1>注册新用户<span>我已经注册，现在就<a href="">登录</a></span></h1>
             <div class="blank"></div>
@@ -29,7 +29,7 @@
                                 </div>
                             </li>
                             <li id="liphone">
-                                <div class="phonebox">
+                                <div class="phonebox clearfix">
                                     <div class="iphone">
                                         <label for="">请输入手机号</label>
                                         <input type="text" class="hoverinput" id="number">
@@ -38,17 +38,74 @@
                                     <span class="tips2">请填写真实的手机号，并进行验证</span>
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li id="phonecode">
+                                <div class="v2regListInfo_rtCont">
+                                    <div id="_mcode" class="newtext">
+                                        <label >请填写手机验证码</label>
+                                        <input type="text" id="input_phonecode" class="hoverinput">
+                                    </div>
+                                    <span class="tips2">请输入手机接收到的验证码</span>
+                                </div>
+                            </li>
+                            <li class="reg-bg1">
+                                <div class="regListInfo_rtCont">
+                                    <div id="_mpassword" class="newtext">
+                                        <label for="">设置登录密码</label>
+                                        <input type="password" id="input_password" class="hoverinput">
+                                    </div>
+                                    <span class="tips2">6-16位字符，可使用字母、数字或符号组合</span>
+                                </div>
+                            </li>
+                            <li class="reg-bg1">
+                                <div class="regListInfo_rtCont">
+                                    <div id="_mpassword2" class="newtext">
+                                        <label for="">再次输入密码</label>
+                                        <input type="password" id="input-repassword">
+                                    </div>
+                                    <span class="tips2">请再次输入登录密码，两次输入必须一致</span>
+                                </div>
+                            </li>
+                            <li class="livaliadatecode" style="height:75px;display:none;"></li>
+                            <li class="reg-bg1">
+                                <div class="reg_bt">
+                                    <span>
+                                        <input type="checkbox" id="chk_agreen">
+                                        <label for="chk_agreen">请阅读<a href="">《VANCL凡客诚品服务条款》</a></label>
+                                    </span>
+                                    <span class="box10"></span>
+                                    <a href="">
+                                        <div id="submitRegister_false" class="submitStyle">
+                                            立即注册
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div id="submitRegister" class="submitStyle">
+                                            立即注册
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
                             <li></li>
                             <li></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div id="left">
+                <img src="../images/login120412_newlogo.jpg" alt="">
+            </div>
         </div>
-    </form>      
+    </form>   
+    <div id="foot clearfix">
+        <div id="bottom">
+            <div id="bottoms">
+                <p class="bZp3">Copyright 2007 - 2016 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+                <div id="footerArea">
+                <div class="subFooter"><a rel="nofollow" href="https://search.szfw.org/cert/l/CX20111229001302001330" class="redLogo" target="_blank"></a><span class="costumeOrg"></span><a rel="nofollow" href="http://www.315online.com.cn/member/315090053.html" class="wsjyBzzx" target="_blank"></a><a rel="nofollow" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010081900017" class="vanclMsg" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+               
 </body>
 </html>

@@ -241,7 +241,7 @@ div{
     bottom:0;
     padding:0;
     background:none;
-    width:100%;
+    width:185px;
 }
 .logoList .nav-one a{
     display: block;
@@ -263,6 +263,7 @@ div{
 .subNav{
     width:99px;
     background:#fff;
+    z-index:20;
     position: absolute;
     left:-2px;
     top:30px;
