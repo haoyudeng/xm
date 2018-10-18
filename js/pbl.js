@@ -2,7 +2,7 @@ function WaterFall(){}
 $.extend(WaterFall.prototype,{
     init:function(){
         this.page = 1;
-        this.main = $("#pbl ul");
+        this.main = $("#pbl").children("ul");
         this.loading = false;
         this.loadJson()
         .done(function(res){
@@ -21,19 +21,22 @@ $.extend(WaterFall.prototype,{
         return $.ajax(opt);
 
     },
-    renderPage:function(json){
+    renderPage:function(json1){
+        var json=json1.result.wall.list;
+        console.log(json);
         var html = "";
-        for(var i = 0; i < JSON.length ; i++){
+        for(var i = 0; i < json.length ; i++){
             html += `
                 <li class="goods">
-                    <img src="${list[i].show.img}">
+                    <img src="${json[i].show.img}">
                     <h3>
-                        <span>价格:<em>${list[i].price}</em></span>${list[i].props}   
+                        <span>价格:<em>${json[i].price}</em></span>${json[i].props[0]}   
                     </h3>
                 </li>
             `
         }
         this.main.html(this.main.html()+html);
+        this.loading = false;
     },
     bindEvent(){
         $(window).on("scroll",this.Judgeload.bind(this));
@@ -41,13 +44,13 @@ $.extend(WaterFall.prototype,{
     Judgeload(){
         var scrollTop = $("html,body").scrollTop();
         var clientHeight = $("html")[0].clientHeight;
-        var lastBox = $("#foot");
+        var lastBox = this.main.children(":last");
         if(scrollTop + clientHeight > lastBox.offset().top){
             if(this.loading){
                 return 0;
             }
             this.loading = true;
-            this.pagr ++;
+            this.page ++;
             this.loadJson()
             .done(function(res){
                 this.renderPage(res);
