@@ -33,3 +33,19 @@ wechat[0].onmouseover = function(){
         oB.style.display = "none"
     }
 }
+
+//购物车划过效果
+var oDiv = $("#ShoppingCar");
+var lDiv = $("#shopList");
+oDiv[0].onmouseenter = function(){
+    oDiv[0].className = "hover";
+    lDiv[0].style.display = "block";
+    oDiv[0].onmouseleave = function(){
+        oDiv[0].className = "Shopping";
+        lDiv[0].style.display = "none";
+    }
+    lDiv[0].onmouseleave = function(){
+        oDiv[0].className = "Shopping";
+        lDiv[0].style.display = "none";
+    }
+}

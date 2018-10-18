@@ -185,6 +185,7 @@ div{
     height:27px;
     position: relative;
     float:right;
+    z-index:20;
 }
 .hover p a{
     display:block;
