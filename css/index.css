@@ -682,7 +682,7 @@ div{
     float:left;
     display: inline;
     margin-right:10px;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 #pbl ul li img{
     width:100%;
@@ -703,4 +703,14 @@ div{
     font-family: Arial;
     line-height: 24px;
     font-size: 14px;
+}
+#pbl ul li button{
+    clear:both;
+    text-align: center;
+    width:100%;
+    border:none;
+    height:20px;
+    margin-bottom:10px;
+    background:#321;
+    color:#fff;
 }

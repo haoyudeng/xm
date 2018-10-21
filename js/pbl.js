@@ -30,8 +30,10 @@ $.extend(WaterFall.prototype,{
                 <li class="goods">
                     <img src="${json[i].show.img}">
                     <h3>
-                        <span>价格:<em>${json[i].price}</em></span>${json[i].props[0]}   
+                        <span>价格:<em>${json[i].price}</em></span>${json[i].props[0]}  
+                         
                     </h3>
+                    <button date-id = ${json[i].iid}>加入购物车</button>
                 </li>
             `
         }
@@ -56,7 +58,60 @@ $.extend(WaterFall.prototype,{
                 this.renderPage(res);
             })
         }
-    }
+    },
+    addCar:function(event){
+        var target = event.target;
+        var goods = $(target).attr("data-id");
+        var cookie;
+        if((cookie = $.cookie("shopCar"))){
+            var cookieArray = JSON.parse(cookie);
+            var hasGoods = false;
+            for(var i = 0; i<cookieArray.length ;i++){
+                if(cookieArray[i].id == goodsId){
+                    hasGoods = true;
+                    cookieArray[i].num ++;
+                    break;
+                }
+            }
+            if(hasGoods == false){
+                var goods = {
+                    id : goodsId,
+                    num : "1"
+                }
+                cookieArray.push(goods);
+            }
+            $.cookie("shopCar",JSON.stringify(cookieArray));
+                }else{
+                    $.cookie("shopCar",`[{"id":"${goodsId}","num":"1"}]`);
+                }
+                console.log($.cookie("shopCar"));
+                this.listSum();
+        },
+        showList:function(event){
+            var target = event.target;
+            if(target != $(".shopCar>div")[0]) return 0;
+
+                var cookie;
+                if(!(cookie = $.cookie("shopCar"))){ return 0; };
+                var cookieArray = JSON.parse(cookie);
+
+                var html = "";
+                // for 购物车里有多少商品就拼接多少个;
+                for(var i = 0 ; i < cookieArray.length ; i ++){
+                    // console.log(cookieArray[i]);
+                    // for 判断哪一个商品是购物车里的商品;
+                    for(var j = 0 ; j < this.json.length ; j ++){
+                        if(cookieArray[i].id == this.json[j].id){
+                            html += `<li data-id="${cookieArray[i].id}">
+                                        <img src="${json[i].show.img}" alt="">
+                                        <h3>${json[i].props[0]}</h3>
+                                        <strong>${cookieArray[i].num}</strong>
+                                    </li>`;
+                            break;
+                        }
+                    }
+                }
+        }
 })
 var waterfall = new WaterFall();
 waterfall.init();   
