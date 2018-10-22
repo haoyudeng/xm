@@ -6,9 +6,11 @@ $.extend(WaterFall.prototype,{
         this.loading = false;
         this.loadJson()
         .done(function(res){
+            this.json = res.subjects;
             this.renderPage(res);
         })
         this.bindEvent();
+        this.listSum();
     },
     loadJson:function(){
         var opt = {
@@ -42,6 +44,21 @@ $.extend(WaterFall.prototype,{
     },
     bindEvent(){
         $(window).on("scroll",this.Judgeload.bind(this));
+        $("#shopList ul").on("click","button",this.addCar.bind(this));
+
+                $("#ShoppingCar").on("mouseenter",this.showList.bind(this));
+                $("#ShoppingCar").on("mouseleave",function(){
+                    $(".goods-list").children().remove();
+                });
+                $("#ShoppingCar").on("click",function(event){
+                    var target = event.target ; 
+                    if(target != $("#ShoppingCar")[0]) return 0;
+
+                    $.removeCookie("shopCar");
+                    // 执行鼠标移出事件;
+                    $("#ShoppingCar").triggerHandler("mouseleave");
+                    this.listSum();
+                }.bind(this));
     },
     Judgeload(){
         var scrollTop = $("html,body").scrollTop();
@@ -111,6 +128,20 @@ $.extend(WaterFall.prototype,{
                         }
                     }
                 }
+                $(".goods-list").html(html);
+        },
+        listSum:function(){
+            var cookie;
+            if(!(cookie = $.cookie("ShoppingCar"))){
+                $("#ShoppingCar").find("span").html(0);
+                return 0;
+            };
+            var cookieArray = JSON.parse(cookie);
+            var sum = 0;
+            for(var i = 0;i<cookieArray.length ; i++){
+                sum += Number(cookieArray[i].num);
+            }
+            $("#ShoppingCar").find("span").html(sum);
         }
 })
 var waterfall = new WaterFall();
